@@ -1,5 +1,29 @@
 # DataQuality
 
+
+Introduction
+The main aim of the Data Quality project is to provide a quantified, standardised, centralised report on data quality for production data in IDW tables and Data Products. With data being central to Optum's business, it is firstly paramount that the quality of the data is understood within the organisation; how this data quality is quantified is outlined in the Data Quality Scoring section below. Secondly, the introduction of a data quality score can provide direction: if a table's data quality score is poor, one can open up a line of inquiry as to investigate why this is the case. On the other hand, if the data quality score is high, it delivers confidence and peace-of-mind to any reports or insights derived from such a data set. If data is thought of as the raw materials going into internal strategic decision-making, analysts' internal reports, client-facing business reports, it is of huge benefit to get a sense of the degree in which the data is of a sound, trustworthy nature and how well it holds up under scrutiny; much in the same way one would like to know the quality of material going into the construction of a building.
+The outputs of this project will initially be available for Internal use for the Optum Data Strategy team, with the evolution of the project seeing that Optum business users being included. 
+
+ 
+Data Quality Scoring
+Data quality is realised through a grading system, as outlined below:
+
+ 
+
+This grading system is created through an algorithmic approach, which is outlined in greater detail here: algorithmic process for data quality scoring.
+The implementation of the algorithm is developed in Azure with PySpark and Databricks. 
+The current tasks and back log can be found here. 
+
+ 
+Goals
+•	Create capability for profiling production level tables from IDW, such as F_Claim_Transaction, as well as Data Products, and assign them a data quality score through algorithmic scoring, as shown above. 
+•	Create an audit table to capture the evolution of each table's data quality. This will provide a means of monitoring whether or not a table's data quality is improving.
+•	Provide dashboarding capabilities for the output of the Data Quality pipeline and eventually link in the pipeline with Collibra, a data catalog platform.
+
+![image](https://user-images.githubusercontent.com/11782274/161700134-09c20809-70f4-4e4f-9329-f657223d2f26.png)
+
+
 Data Quality Blueprint
 Overview 
 
